@@ -34,7 +34,7 @@ function reinstall-node() {
 }
 
 # PHP - wip
-alias php='docker run --rm '
+alias php='docker run --rm -v `pwd`:/app -w /app php php '
 alias composer='docker run --rm -it -v `pwd`:/app -w /app composer:latest composer '
 alias c='composer '
 
