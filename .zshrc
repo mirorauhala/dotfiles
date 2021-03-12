@@ -39,6 +39,15 @@ alias composer='docker run --rm -it -v `pwd`:/app -w /app composer:latest compos
 alias c='composer '
 
 
+## Quick access
+
+# Edit brain quickly
+function edit-brain() {
+    cd ~/Code/github.com/mirorauhala/brain
+    npm run start & code . & fg
+}
+
+
 # SSH-Agent
 export SSH_AUTH_SOCK=/Users/mirorauhala/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 
