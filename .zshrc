@@ -11,6 +11,12 @@ alias search='fzf'
 alias ls='ls --color --time-style=long-iso'
 alias ll='ls -la --color --time-style=long-iso'
 
+
+# Exports
+export PATH=$HOME/bin:$PATH
+export PATH=~/.composer/vendor/bin:$PATH
+export EDITOR="/usr/bin/nano"
+
 ## Helper functions
 
 cheat() {
