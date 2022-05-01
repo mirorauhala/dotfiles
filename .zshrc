@@ -23,9 +23,12 @@ cheat() {
     curl --tlsv1.3 https://cheat.sh/$1
 }
 
-# Path
-export PATH=$HOME/bin:$PATH
-export PATH=~/.composer/vendor/bin:$PATH
+update-dotfiles() {
+    cd ~/.dotfiles
+    git pull
+    print Reloading .zshrc
+    reload
+}
 
 ## macOS differences
 if [[ $OSTYPE == darwin* && $CPUTYPE == arm64 ]]; then
