@@ -5,7 +5,9 @@ zstyle ':vcs_info:*' formats ' %s(%F{red}%b%f)' # git(main)
 ## General
 HIST_STAMPS="yyyy-mm-dd"
 alias reload='source ~/.zshrc'
+alias edit='vim'
 alias cat='bat'
+alias search='fzf'
 alias ls='ls --color --time-style=long-iso'
 alias ll='ls -la --color --time-style=long-iso'
 
