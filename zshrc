@@ -3,7 +3,7 @@ precmd () { vcs_info } # always load before displaying the prompt
 zstyle ':vcs_info:*' formats ' %s(%F{red}%b%f)' # git(main)
 
 ## General
-HIST_STAMPS="yyyy-mm-dd"
+HIST_STAMPS="yyyy-mm-dd" # ISO-8601 all the way baby
 alias reload='source ~/.zshrc'
 alias edit='vim'
 alias cat='bat'
