@@ -1,10 +1,6 @@
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
-
-# See https://ohmyz.sh/
-export ZSH="/Users/miro/.oh-my-zsh"
-plugins=(git)
-source $ZSH/oh-my-zsh.sh
+autoload -Uz vcs_info # enable vcs_info
+precmd () { vcs_info } # always load before displaying the prompt
+zstyle ':vcs_info:*' formats ' %s(%F{red}%b%f)' # git(main)
 
 ## General
 HIST_STAMPS="yyyy-mm-dd"
