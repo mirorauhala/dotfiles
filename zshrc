@@ -28,6 +28,7 @@ update-dotfiles() {
     git pull
     print Reloading .zshrc
     reload
+    cd ~
 }
 
 ## macOS differences
