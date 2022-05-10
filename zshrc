@@ -32,7 +32,7 @@ update-dotfiles() {
 }
 
 ## macOS differences
-if [[ $OSTYPE == darwin* && $CPUTYPE == arm64 ]]; then
+if [[ $OSTYPE == darwin* ]]; then
 
     ## coreutils 'ls' command is aliased to gls
     alias ls='gls --color=auto --time-style=long-iso'
