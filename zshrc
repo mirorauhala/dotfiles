@@ -31,6 +31,12 @@ update-dotfiles() {
     cd ~
 }
 
+sc() {
+    repo=$(git config --get remote.origin.url | sed 's/:/\n/g' | sed -n 2p | rev | cut -c5- | rev)
+    commit=$(git rev-parse origin/master)
+    open "https://github.com/$repo/commit/$commit"   
+}
+
 ## macOS differences
 if [[ $OSTYPE == darwin* ]]; then
 
