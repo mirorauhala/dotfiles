@@ -34,7 +34,8 @@ update-dotfiles() {
 
 sc() {
     repo=$(git config --get remote.origin.url | sed 's/:/\n/g' | sed -n 2p | rev | cut -c5- | rev)
-    commit=$(git rev-parse origin/master)
+    branch=$(git rev-parse --abbrev-ref HEAD)
+    commit=$(git rev-parse origin/$branch)
     open "https://github.com/$repo/commit/$commit"   
 }
 
