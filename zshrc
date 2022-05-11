@@ -10,6 +10,7 @@ alias cat='bat'
 alias search='fzf'
 alias ls='ls --color --time-style=long-iso'
 alias ll='ls -la --color --time-style=long-iso'
+alias gs='git status'
 
 
 # Exports
