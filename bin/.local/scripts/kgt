@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# ~/work/kgt-microservice/apps/api; npm run start
+# ~/work/kgt-ui/client; npm run start
+# ~/work/kgt-ui/server; npm run start
+tmux new-session -d -s kgt-ui -c ~/work/kgt-ui
+
+tmux new-session -d -s kgt-microservice -c ~/work/kgt-microservice
+tmux new-window -d -t kgt-microservice:1
+tmux new-window -d -t kgt-microservice:2 -c ~/work/kgt-microservice/apps/api
+tmux send-keys -t kgt-microservice:1 'docker compose up' C-m
+tmux send-keys -t kgt-microservice:2 'npm run start' C-m
+
+tmux new-session -d -s kgt-ui -c ~/work/kgt-ui
+tmux new-window -d -t kgt-ui:1 -c ~/work/kgt-ui/client
+tmux new-window -d -t kgt-ui:2 -c ~/work/kgt-ui/server
+tmux send-keys -t kgt-ui:1 'npm run start' C-m
+tmux send-keys -t kgt-ui:2 'npm run start' C-m
+
+tmux-sessionizer
