@@ -1,0 +1,6 @@
+font = { normal.family = "Hack Nerd Font", size = 16 }
+window.startup_mode = "Maximized"
+selection.save_to_clipboard = true
+window.decorations = "none"
+window.title = "Alacritty"
+window.dynamic_title = false

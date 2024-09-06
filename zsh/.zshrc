@@ -1,30 +1,20 @@
 
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 HIST_STAMPS="yyyy-mm-dd"
-STOW_FOLDERS="zsh,tmux,bin"
+
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+zstyle ':omz:update' mode reminder
+zstyle ':omz:update' frequency 30
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
 
 restow() {
-    pushd $DOTFILES
-    for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
-    do
-        echo "stow $folder"
-        stow -D $folder
-        stow $folder
-    done
-    popd
+    ~/.dotfiles/install
 }
-
-unwip() {
-  git log -1 --oneline
-  echo "---------------------------------------"
-  git diff --stat HEAD~1
-  echo "---------------------------------------"
-  git reset --soft HEAD~1
-  git reset HEAD .
-  echo "Changes from the last commit have been undone."
-}
-
 
 source ~/.zsh_profile
 
 eval "$(fnm env --use-on-cd)"
+eval "$(direnv hook zsh)"
+

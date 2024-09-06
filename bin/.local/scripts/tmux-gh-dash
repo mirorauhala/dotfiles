@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+selected_name="github"
+tmux_running=$(pgrep tmux)
+
+if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
+    tmux new-session -s $selected_name gh dash
+    exit 0
+fi
+
+if ! tmux has-session -t=$selected_name 2> /dev/null; then
+    tmux new-session -ds $selected_name gh dash
+fi
+
+tmux switch-client -t $selected_name
