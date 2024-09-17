@@ -1,7 +1,9 @@
 *
 
 # Terminal basics
-!.zsh
+!.zshrc
+!.zsh_profile
+!.zprofile
 !.tmux.conf
 !.alacritty.toml
 
