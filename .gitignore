@@ -6,6 +6,7 @@
 !.zprofile
 !.tmux.conf
 !.alacritty.toml
+!Brewfile
 
 !.gh-dash.yml
 !/.local
