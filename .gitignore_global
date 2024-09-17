@@ -1,0 +1,10 @@
+*~
+.DS_Store
+id_rsa
+id_ed25519
+*.bacpac
+*.db
+*.sqlite
+*.sqlite3
+*.bak
+.env

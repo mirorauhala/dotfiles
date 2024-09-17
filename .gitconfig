@@ -1,0 +1,30 @@
+[user]
+	name = Miro Rauhala
+	email = 4082806+mirorauhala@users.noreply.github.com
+[alias]
+	lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
+	upstream = reset --hard @{u}
+[push]
+	autoSetupRemote = true
+[core]
+	excludesfile = /Users/miro.rauhala/.gitignore_global
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	line-numbers = true
+	side-by-side = true
+	navigate = true
+	hyperlinks = true
+	hyperlinks-file-link-format = "vscode://file/{path}:{line}"
+[diff]
+	colorMoved = default
+[commit]
+	template = /Users/miro.rauhala/.stCommitMsg
+[rerere]
+	enabled = true
+[init]
+	defaultBranch = main
+[maintenance]
+	repo = /Users/miro.rauhala/work/kgt-ui
+	repo = /Users/miro.rauhala/work/kgt-microservice

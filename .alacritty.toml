@@ -1,0 +1,47 @@
+[font]
+normal.family = "JetBrains Mono Nerd Font"
+size = 16
+
+[selection]
+save_to_clipboard = true
+
+[window]
+startup_mode = "Maximized"
+option_as_alt = "OnlyLeft"
+decorations = "buttonless"
+title = "Alacritty"
+dynamic_title = false
+blur = true
+opacity = 0.8
+
+# Colors (Mellow)
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.primary]
+background = "#171417"
+foreground = "#adb0d2"
+dim_foreground = "#ffffff"
+bright_foreground = "#ffffff"
+
+# Normal colors
+[colors.normal]
+black = "#000000"
+red = "#ff7777"
+green = "#77ff7e"
+yellow = "#f8ff77"
+blue = "#7785ff"
+magenta = "#cd77ff"
+cyan = "#77d4ff"
+white = "#ffffff"
+
+# Bright colors
+[colors.bright]
+black = "#000000"
+red = "#ff5151"
+green = "#65ff8b"
+yellow = "#ffeb4f"
+blue = "#6b72ff"
+magenta = "#e24fff"
+cyan = "#4b90ff"
+white = "#ffffff"

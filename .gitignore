@@ -1,1 +1,21 @@
-.DS_Store
+*
+
+# Terminal basics
+!.zsh
+!.tmux.conf
+!.alacritty.toml
+
+!.gh-dash.yml
+!/.local
+/.local/*
+!/.local/scripts
+!/.local/scripts/*
+
+
+!.gitconfig
+!.stCommitMsg
+!.gitignore_global
+
+# Apple garbage
+**/.DS_Store
+
