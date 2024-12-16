@@ -8,3 +8,5 @@ id_ed25519
 *.sqlite3
 *.bak
 .env
+
+*mise.local.toml

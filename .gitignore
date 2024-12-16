@@ -15,6 +15,13 @@
 !/.local/scripts/*
 
 
+!/.config
+/.config/*
+!.config/mise
+!.config/mise/*
+.config/mise/age.key
+
+
 !.gitconfig
 !.stCommitMsg
 !.gitignore_global

@@ -11,6 +11,6 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 source ~/.zsh_profile
 
-eval "$(fnm env --use-on-cd)"
-eval "$(direnv hook zsh)"
-
+#eval "$(fnm env --use-on-cd)"
+#eval "$(direnv hook zsh)"
+eval "$(mise activate zsh)"

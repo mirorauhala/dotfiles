@@ -1,0 +1,10 @@
+[tools]
+age = "latest"
+node = "22"
+sops = "latest"
+
+[env]
+_.file = "~/.config/mise/.env.json"
+
+[settings.sops]
+age_key_file = "~/.config/mise/age.key"
