@@ -9,4 +9,5 @@ id_ed25519
 *.bak
 .env
 
+*.mise/*
 *mise.local.toml
