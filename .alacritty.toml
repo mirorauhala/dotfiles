@@ -1,5 +1,6 @@
 [font]
-normal.family = "JetBrains Mono Nerd Font"
+normal.family = "JetBrainsMono Nerd Font"
+normal.style = "Medium"
 size = 16
 
 [selection]
@@ -19,7 +20,7 @@ opacity = 0.8
 draw_bold_text_with_bright_colors = true
 
 [colors.primary]
-background = "#171417"
+background = "#100e29"
 foreground = "#adb0d2"
 dim_foreground = "#ffffff"
 bright_foreground = "#ffffff"
