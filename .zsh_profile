@@ -4,6 +4,7 @@ addToPathFront() {
     fi
 }
 
+export HOMEBREW_NO_AUTO_UPDATE=1
 export EDITOR='nvim'
 export HUSKY=0
 export GH_DASH_CONFIG="$HOME/.gh-dash.yml"
@@ -39,6 +40,31 @@ cheat() {
 
 ubuntu() {
     docker run --rm -it ubuntu:22.04 /bin/bash
+}
+
+dot-install() {
+    local source_file="op://Private/pvya3xqhh3fv55pauq5uzfmgzu/age.key"
+    local target_file="$HOME/.config/mise/age.key"
+
+    if [[ -e $target_file ]]; then
+        read -q "confirm?The file '$target_file' already exists. Do you want to overwrite it? (y/N): "
+        echo
+        if [[ $confirm == [yY] ]]; then
+            echo "Overwriting '$target_file' from 1password..."
+            op read $source_file > $target_file
+            echo "Setting permissions..."
+            chmod u+rw,g-rwx,o-rwx $target_file
+            echo "Done."
+        else
+            echo "Aborted."
+        fi
+    else
+        echo "Installing '$target_file' from 1password..."
+        op read $source_file > $target_file
+        echo "Setting permissions..."
+        chmod u+rw,g-rwx,o-rwx $target_file
+        echo "Done."
+    fi
 }
 
 source ~/.local/scripts/tmux-fns

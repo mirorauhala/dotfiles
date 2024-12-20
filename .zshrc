@@ -1,4 +1,3 @@
-
 HIST_STAMPS="yyyy-mm-dd"
 
 export ZSH="$HOME/.oh-my-zsh"
