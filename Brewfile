@@ -8,6 +8,7 @@ brew 'golang'
 brew 'git-delta'
 brew 'neovim'
 brew 'sqlite3'
+brew 'mise'
 
 # Tools
 brew 'jq'
