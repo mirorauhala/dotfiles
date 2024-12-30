@@ -20,6 +20,9 @@
 !.config/mise/*
 .config/mise/age.key
 
+!.config/ghostty
+!.config/ghostty/*
+
 
 !.gitconfig
 !.stCommitMsg

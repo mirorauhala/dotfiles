@@ -22,6 +22,7 @@ brew '1password-cli'
 
 # Apps
 cask 'alacritty'
+cask 'ghostty'
 cask 'google-chrome'
 cask 'firefox'
 cask '1password'
