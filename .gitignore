@@ -8,7 +8,6 @@
 !.alacritty.toml
 !Brewfile
 
-!.gh-dash.yml
 !/.local
 /.local/*
 !/.local/scripts
