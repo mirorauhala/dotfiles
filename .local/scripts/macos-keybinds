@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Override the default keybinds for certain applications.
+
+THINGS="com.culturedcode.ThingsMac"
+defaults write "$THINGS" NSUserKeyEquivalents -dict-add "Hide Sidebar" "@s"
+defaults write "$THINGS" NSUserKeyEquivalents -dict-add "Show Sidebar" "@s"
+defaults write "$THINGS" NSUserKeyEquivalents -dict-add "When..." "@$w"
+
+MAIL="com.apple.mail"
+defaults write "$MAIL" NSUserKeyEquivalents -dict-add "Archive" "@e"
