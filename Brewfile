@@ -17,7 +17,6 @@ brew 'watch'
 brew 'ffmpeg'
 brew 'mkcert'
 brew 'ripgrep'
-brew 'ollama'
 brew '1password-cli'
 
 # Apps
