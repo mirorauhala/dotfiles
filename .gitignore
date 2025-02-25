@@ -20,6 +20,9 @@
 !.config/mise/*
 .config/mise/age.key
 
+!.config/gh
+!.config/gh/config.yml
+
 !.config/ghostty
 !.config/ghostty/*
 
