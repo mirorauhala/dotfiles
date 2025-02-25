@@ -2,6 +2,7 @@
 age = "latest"
 node = "22"
 sops = "latest"
+watchexec = "latest"
 
 [env]
 _.file = "~/.config/mise/.env.json"
