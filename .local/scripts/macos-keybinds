@@ -9,3 +9,7 @@ defaults write "$THINGS" NSUserKeyEquivalents -dict-add "When..." "@$w"
 
 MAIL="com.apple.mail"
 defaults write "$MAIL" NSUserKeyEquivalents -dict-add "Archive" "@e"
+
+MAPS="com.apple.Maps"
+defaults write "$MAPS" NSUserKeyEquivalents -dict-add "Show Sidebar" "@s"
+defaults write "$MAPS" NSUserKeyEquivalents -dict-add "Hide Sidebar" "@s"
