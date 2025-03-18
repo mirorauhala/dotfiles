@@ -1,15 +1,27 @@
 #!/bin/bash
 
 # Override the default keybinds for certain applications.
+#
+# From Apple's Cocoa Event Handling Guide: 
+# 
+#  ^ for Control
+#  ~ for Option
+#  $ for Shift
+#  # for numeric keypad
+#
+# See: https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/TextDefaultsBindings/TextDefaultsBindings.html
 
 THINGS="com.culturedcode.ThingsMac"
-defaults write "$THINGS" NSUserKeyEquivalents -dict-add "Hide Sidebar" "@s"
-defaults write "$THINGS" NSUserKeyEquivalents -dict-add "Show Sidebar" "@s"
-defaults write "$THINGS" NSUserKeyEquivalents -dict-add "When..." "@$w"
+defaults write "$THINGS" NSUserKeyEquivalents -dict-add "Hide Sidebar" '@s'
+defaults write "$THINGS" NSUserKeyEquivalents -dict-add "Show Sidebar" '@s'
+defaults write "$THINGS" NSUserKeyEquivalents -dict-add "When..." '@$w'
 
 MAIL="com.apple.mail"
-defaults write "$MAIL" NSUserKeyEquivalents -dict-add "Archive" "@e"
+defaults write "$MAIL" NSUserKeyEquivalents -dict-add "Archive" '@e'
 
 MAPS="com.apple.Maps"
-defaults write "$MAPS" NSUserKeyEquivalents -dict-add "Show Sidebar" "@s"
-defaults write "$MAPS" NSUserKeyEquivalents -dict-add "Hide Sidebar" "@s"
+defaults write "$MAPS" NSUserKeyEquivalents -dict-add "Show Sidebar" '@s'
+defaults write "$MAPS" NSUserKeyEquivalents -dict-add "Hide Sidebar" '@s'
+
+WORD="com.microsoft.Word"
+defaults write "$WORD" NSUserKeyEquivalents -dict-add "Comment" '@$c'
