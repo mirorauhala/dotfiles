@@ -14,6 +14,7 @@
 THINGS="com.culturedcode.ThingsMac"
 defaults write "$THINGS" NSUserKeyEquivalents -dict-add "Hide Sidebar" '@s'
 defaults write "$THINGS" NSUserKeyEquivalents -dict-add "Show Sidebar" '@s'
+defaults write "$THINGS" NSUserKeyEquivalents -dict-add "Quick Find..." '@k'
 defaults write "$THINGS" NSUserKeyEquivalents -dict-add "When..." '@$w'
 
 MAIL="com.apple.mail"
